@@ -1,0 +1,93 @@
+.designs-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    width: 70%;
+  }
+  
+  .design {
+    border-bottom: 1px solid #ccc;
+    margin-top: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .design:hover {
+    transform: scale(1.03);
+  }
+  
+  .design.open {
+    height: 450px;
+  }
+  
+  .design.collapsed {
+    height: 54px;
+  }
+  
+  .design-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .design-iframe {
+    width: 100%;
+    height: 550px;
+    border: none;
+    border-radius: 12px;
+  }
+  
+  .spinner {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  /* Optional: spinner visuals */
+  .fancy-spinner {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 1rem auto;
+  }
+  
+  .fancy-spinner .ring,
+  .fancy-spinner .dot {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .fancy-spinner .ring {
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: white;
+    animation: ring 1s linear infinite;
+  }
+  
+  .fancy-spinner .ring:nth-child(2) {
+    border: 3px solid transparent;
+    border-bottom-color: white;
+    animation-direction: reverse;
+  }
+  
+  .fancy-spinner .dot {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes ring {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
