@@ -137,12 +137,6 @@ nav {
     transition: transform 0.3s ease;
 }
 
-#hide-nav {
-    position: absolute;
-    display: none;
-    top: 15px;
-    left: 15px;
-}
 
 
 nav h1{
@@ -285,8 +279,7 @@ footer a:hover {
         width: 90%;
         height: 100%;
         padding: 0 5%;
-        margin: 0 10% 0 0;
-        /* margin-right: 200%; */
+        margin: 0 200% 0 0;
         overflow: hidden;
         text-align: right;
         background: rgba(26, 44, 74, 0.543);
@@ -296,16 +289,20 @@ footer a:hover {
         border-right: 1px solid var(--accent-color);
         z-index: 100;
     }
+    .active{
+        margin: 0 13% 0 0;
+    }
     nav h1 {
         font-size: 1.5rem;
         right: 5%;
     }
     nav ul li a {
         font-size: 1rem;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 6px;
     }
-    #hide-nav{
-        display: block;
-    }
+    
     #show-nav{
         display: fixed;
     }
@@ -315,10 +312,15 @@ footer a:hover {
     .main-div {
         flex-direction: column;
         align-items: center;
-        height: auto;
+        justify-content: center;
+        height: 100vh;
     }
     .home-main-section {
         width: 90%;
         height: 100vh;
+    }
+    .designs-container {
+  margin: 0 5% 0 0;
+
     }
 }
