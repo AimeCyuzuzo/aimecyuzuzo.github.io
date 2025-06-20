@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Designs</title>
-    <link rel="stylesheet" href="css/designs.css" />
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Aime Cyuzuzo - My Projects</title>
+        <link rel="stylesheet" href="/css/projects.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
 
     <!-- Fixed elements -->
     <div class="experience-div">
@@ -68,13 +68,26 @@
                 </ul>
             </nav>
         </header>
-    
-    
-        <div id="designs-container" class="designs-container">
-            <h1 style="width: 100%; text-align: center;top: 15%;left: 50%;font-weight: bolder;font-size:xx-large; margin-bottom: 30px;">My Designs</h1>
-        </div>
+
+        <section>
+
+            <h1 style="position: absolute; text-align: center;top: 15%;left: 50%;transform: translateX(-50%);font-weight: bolder;font-size:xx-large;">My Projects</h1>
+            <div style="display: flex;justify-content: center; align-items: center;height: 100%;">
+
+                <div class="slideshow-container">
+                    <div class="slides-wrapper" id="slidesWrapper">
+                        </div>
+                    <div class="dots-container" id="dotsContainer"></div>
+                </div>
+            </div>
+
+
+        </section>
     </div>
 
-    <script src="js/designs-script.js"></script>
-</body>
-</html>
+
+
+        <script src="/js/projects.js"></script>
+
+    </body>
+</html> 
