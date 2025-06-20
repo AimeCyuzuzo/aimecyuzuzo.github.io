@@ -43,7 +43,7 @@ function initializeSlideshow() {
 
         const linkAnchor = document.createElement('a');
         linkAnchor.href = slide.link;
-        linkAnchor.textContent = "Learn More";
+        linkAnchor.textContent = "Visit site";
         linkAnchor.target = "_blank";
         contentDiv.appendChild(linkAnchor);
 
