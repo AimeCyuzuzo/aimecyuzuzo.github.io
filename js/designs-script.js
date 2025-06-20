@@ -38,7 +38,7 @@ const designs = [
   
     const header = document.createElement('div');
     header.className = 'design-header';
-    header.innerHTML = `<h2>${design.name}</h2>`;
+    header.innerHTML = `<h4>${design.name}</h4>`;
   
     const iframe = document.createElement('iframe');
     iframe.className = 'design-iframe';
@@ -72,6 +72,7 @@ const designs = [
   
     iframe.addEventListener('load', () => {
       spinner.style.display = 'none';
+      iframe.style.height = "550px"
     });
   
     wrapper.appendChild(header);
